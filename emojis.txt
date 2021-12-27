@@ -1,0 +1,37 @@
+The standard emojiset should be a standard emoji pack with some elevated permissions or features.
+
+In order to accommodate this, emoji packs would need to support the follow features (to some extent) in order to also support the standard emojiset.
+- unicode replacements
+- localization: names, tags, descriptions, etc..
+- SVG support
+- variable enum support
+- variable color support
+$$$$
+Unicode replacements would be predetermined due to complexity of allowing any unicode sequence.
+The standard emojiset would use data from the CLDR in combination with some changes for its localization data.
+
+SVG support is not a great idea for most emoji packs as is and would need some other ideas to make it viable.
+- SVGs aren't completely safe to use, so having a trusted repository of emoji packs could help.
+- SVGs aren't supported everywhere easily. If the trusted repository had a workflow to build non-vector images that could help.
+$$$$
+Variable color support would include things such as skin color, hair color, and possibly others.
+The standard emojiset should have access to its own custom variable enums as needed, ex. for the furry and orc variants.
+
+The manifest for an emoji pack should include some tags saying what features are supported to make it easier to search for and find those features.
+
+A theme store should include a preview area displaying how the different features (Ex. `:name:` shorthands, tags to find them in search, unicode replacements, etc..).
+Having a small tips area explaining how each of the features work would help users who may not understand what many of the terms mean.
+Ex. using the emoji pack, displaying how typing `:emoji_name:` with the pack active will replace it with the emoji, and how certain emoji like `😀` will get replaced into the pack's emoji.
+
+The ability to search *all* packs for certain shorthands, unicode replacements, tags,  and etc.. to find any specific emoji you might want.
+
+Having a preview window (similar to theme shop previews) that lets you preview the emoji in a similar way to how google fonts lets you preview the font by typing an example sentence.
+
+In my mind, the tagging, localization, and description formats should be designed in a way so that they could later be applied to gifs and stickers.
+
+For people that want to edit and create packs from within the browser itself similar to discord, I'd imagine we'd have something similar while still using the emoji pack format internally with some limitations.
+- no svg support
+  - limited color support (standard emoji only)
+  - limited variant support (standard variants only)
+$$$$
+These packs should have a way to download / export them in the emoji pack format so people could improve them and easily add them to the repository / store later on.
