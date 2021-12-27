@@ -35,3 +35,8 @@ For people that want to edit and create packs from within the browser itself sim
   - limited variant support (standard variants only)
 $$$$
 These packs should have a way to download / export them in the emoji pack format so people could improve them and easily add them to the repository / store later on.
+
+
+original text by bree
+
+saved by amywastaken
